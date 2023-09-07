@@ -13,10 +13,7 @@ logging.basicConfig(
 )
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
-if not bot_token:
-   bot=Client(api_id="21073139",api_hash="e90297a18f44c384564182eb1cd1a27",session_name=Config.PYRO_SESSION)   
-else:
-   bot=Client(":memory:",api_id="21073139",api_hash="e90297a18f44c384564182eb1cd1a27",bot_token="5963775988:AAE2Y1fdIoxV5PT0pTH-n7phxGFSgkJMCVw")
+bot=Client(":memory:",api_id="21073139",api_hash="e90297a18f44c384564182eb1cd1a27",bot_token="5963775988:AAE2Y1fdIoxV5PT0pTH-n7phxGFSgkJMCVw")
 
 @bot.on_message(filters.command("ramram"))
 async def _(bot, msg):
