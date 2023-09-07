@@ -3,7 +3,6 @@ import asyncio
 from pyrogram.errors.exceptions.flood_420 import FloodWait
 from pyrogram import Client,filters
 from pyrogram.types import *
-from .config import Config
 import logging
 from pyrogram.errors import (
     ChatAdminRequired
